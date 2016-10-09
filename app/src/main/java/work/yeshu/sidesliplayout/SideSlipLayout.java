@@ -38,7 +38,7 @@ public class SideSlipLayout extends FrameLayout {
     private OnMenuOpenListener mOnMenuOpenListener = null;
 
     public interface OnMenuOpenListener {
-        void onSlipOut();
+        void onMenuOpen();
     }
 
 
@@ -237,7 +237,7 @@ public class SideSlipLayout extends FrameLayout {
             //向左滑动的距离大于删除菜单宽度的2/3,则展开菜单
             lastLeft = 0 - mMenuView.getWidth();
             if (null != mOnMenuOpenListener) {
-                mOnMenuOpenListener.onSlipOut();
+                mOnMenuOpenListener.onMenuOpen();
             }
         } else {
             lastLeft = 0;

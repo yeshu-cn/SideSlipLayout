@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
 
         sideSlipLayout.setOnMenuOpenListener(new SideSlipLayout.OnMenuOpenListener() {
             @Override
-            public void onSlipOut() {
+            public void onMenuOpen() {
                 Log.i(TAG, "Menu is open");
                 Snackbar.make(sideSlipLayout, "Item content is clicked", Snackbar.LENGTH_LONG).setAction("Close menu", new View.OnClickListener() {
                     @Override
