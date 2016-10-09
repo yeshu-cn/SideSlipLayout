@@ -22,6 +22,7 @@ import android.widget.OverScroller;
  */
 public class SideSlipLayout extends FrameLayout {
     private static final float OVER_MOVE_SCALE = 0.25f;
+    private static final int OVER_SCROLL_DISTANCE = 100;
 
 
     private View mContentView;
@@ -221,9 +222,8 @@ public class SideSlipLayout extends FrameLayout {
             left = 0;
         }
 
-        int overScrollDistance = 100;
-        if (Math.abs(left) > mMenuView.getWidth() + overScrollDistance) {
-            left = 0 - (mMenuView.getWidth() + overScrollDistance);
+        if (Math.abs(left) > mMenuView.getWidth() + OVER_SCROLL_DISTANCE) {
+            left = 0 - (mMenuView.getWidth() + OVER_SCROLL_DISTANCE);
         }
 
         mContentView.layout(left, mContentView.getTop(), left + mContentView.getWidth(), mContentView.getBottom());

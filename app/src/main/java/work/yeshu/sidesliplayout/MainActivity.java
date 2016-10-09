@@ -3,7 +3,6 @@ package work.yeshu.sidesliplayout;
 import android.os.Bundle;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
 
@@ -37,8 +36,7 @@ public class MainActivity extends AppCompatActivity {
         sideSlipLayout.setOnMenuOpenListener(new SideSlipLayout.OnMenuOpenListener() {
             @Override
             public void onMenuOpen() {
-                Log.i(TAG, "Menu is open");
-                Snackbar.make(sideSlipLayout, "Item content is clicked", Snackbar.LENGTH_LONG).setAction("Close menu", new View.OnClickListener() {
+                Snackbar.make(sideSlipLayout, "Menu is open", Snackbar.LENGTH_LONG).setAction("Close menu", new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
                         if (sideSlipLayout.isMenuOpen()) {
