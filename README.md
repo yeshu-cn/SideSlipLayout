@@ -35,5 +35,5 @@
 			
 		    <!-- 内容布局 -->	
         </LinearLayout>
-    </work.yeshu.sidesliplayout.SideSlipLayout>
+</work.yeshu.sidesliplayout.SideSlipLayout>
 ``` 
