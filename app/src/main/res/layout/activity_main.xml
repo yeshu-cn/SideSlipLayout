@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <work.yeshu.sidesliplayout.SideSlipLayout
+        android:id="@+id/side_slip_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent">
+
+        <LinearLayout
+            android:id="@+id/side_slip_menu"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="end"
+            android:background="@color/colorAccent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/btn_delete"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Delete"
+                android:textColor="@color/colorTextIcons"
+                android:textSize="12sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/side_slip_content"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@color/colorPrimary"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="侧滑显示删除菜单"
+                android:textColor="@color/colorTextIcons"
+                android:textSize="12sp"/>
+        </LinearLayout>
+    </work.yeshu.sidesliplayout.SideSlipLayout>
+</RelativeLayout>
